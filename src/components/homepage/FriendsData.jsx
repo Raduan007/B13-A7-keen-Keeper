@@ -34,7 +34,7 @@ const FriendsData = () => {
     <div className="mx-auto pt-12 pb-20">
       <h4 className="px-20 font-semibold pb-6">Your Friends</h4>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:px-20">
         {friends.map((friend) => (
           <Link
             key={friend.id}

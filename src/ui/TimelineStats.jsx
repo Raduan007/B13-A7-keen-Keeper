@@ -31,7 +31,8 @@ const TimelineStats = () => {
   console.log("timeline:", timeline);
   return (
     <div className="w-full max-w-md mx-auto bg-white p-4 rounded-xl shadow">
-     
+     <div className="text-sm text-[#244D3f] font-medium mb-2">
+      By Interaction Type</div>
 
       <ResponsiveContainer width="100%" height={300}>
         <PieChart>

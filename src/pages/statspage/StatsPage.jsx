@@ -8,9 +8,11 @@ const StatsPage = () => {
       <h2 className="text-2xl font-semibold mb-4">
        Friendship Analytics 
       </h2>
+      
+      <div>
+        <TimelineStats />
 
-      <TimelineStats />
-
+      </div>
     </div>
   );
 };
