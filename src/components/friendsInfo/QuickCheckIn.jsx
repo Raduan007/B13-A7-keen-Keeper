@@ -1,6 +1,7 @@
 import { IoVideocamOutline } from "react-icons/io5";
 import { MdOutlineTextsms, MdOutlineWifiCalling3 } from "react-icons/md";
 import { useCheckIn } from "../../ui/CheckInContext";
+import { toast } from "react-toastify";
 
 const QuickCheckIn = ({ friend }) => {
   const { addCheckIn } = useCheckIn();
@@ -15,23 +16,35 @@ const QuickCheckIn = ({ friend }) => {
       <div className="grid grid-cols-3 gap-3">
 
         <button
-          onClick={() => addCheckIn("call", friend)}
-          className="shadow p-3 rounded flex flex-col items-center justify-center transition duration-300 hover:shadow-xl hover:-translate-y-1   active:scale-95">
-          <MdOutlineWifiCalling3  />
+         onClick={() => {
+        addCheckIn("call", friend);
+       toast.success(`Call with ${friend?.name}`);
+      }}
+          className="shadow p-3 rounded flex flex-col items-center justify-center transition duration-300 hover:shadow-xl hover:-translate-y-1 active:scale-95"
+        >
+          <MdOutlineWifiCalling3 />
           <span>Call</span>
         </button>
 
         <button
-          onClick={() => addCheckIn("text", friend)}
-          className="shadow p-3 rounded flex flex-col items-center justify-center transition duration-300 hover:shadow-xl hover:-translate-y-1   active:scale-95">
-          <MdOutlineTextsms  />
+          onClick={() => {
+            addCheckIn("text", friend);
+            toast.info(`Text with ${friend?.name}`); 
+          }}
+          className="shadow p-3 rounded flex flex-col items-center justify-center transition duration-300 hover:shadow-xl hover:-translate-y-1 active:scale-95"
+        >
+          <MdOutlineTextsms />
           <span>Text</span>
         </button>
 
         <button
-          onClick={() => addCheckIn("video", friend)}
-          className="shadow p-3 rounded flex flex-col items-center justify-center transition duration-300 hover:shadow-xl hover:-translate-y-1   active:scale-95">
-          <IoVideocamOutline  />
+          onClick={() => {
+            addCheckIn("video", friend);
+            toast.success(`Video with ${friend?.name}`); 
+          }}
+          className="shadow p-3 rounded flex flex-col items-center justify-center transition duration-300 hover:shadow-xl hover:-translate-y-1 active:scale-95"
+        >
+          <IoVideocamOutline />
           <span>Video</span>
         </button>
 
