@@ -41,7 +41,7 @@ const TimelinePage = () => {
         <select
           value={filter}
           onChange={(e) => setFilter(e.target.value)}
-          className=" w-1/2 p-3 shadow rounded-lg text-gray-600 bg-gray-100">
+          className=" w-1/2 p-3 shadow rounded-lg text-gray-600 bg-gray-100 transition duration-200 hover:shadow-xl hover:-translate-y-1">
 
           <option value="all">Filter timeline</option>
            <option value="text">Text</option>
@@ -64,7 +64,7 @@ const TimelinePage = () => {
         {filteredTimeline.map((item) => (
           <div
             key={item.id}
-            className="bg-white rounded-lg shadow-md p-4 flex items-start gap-3"
+            className="bg-white rounded-lg shadow-md p-4 flex items-start gap-3 transition duration-200 hover:shadow-xl hover:-translate-y-1"
           >
             <div className="text-gray-700 mt-1">
               {getIcon(item.type)}

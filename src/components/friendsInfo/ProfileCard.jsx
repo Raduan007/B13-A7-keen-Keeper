@@ -1,6 +1,6 @@
 const ProfileCard = ({ friend }) => {
   return (
-    <div className="shadow-md rounded-lg p-6 text-center">
+    <div className="shadow-md rounded-lg p-6 text-center transition duration-200 hover:shadow-xl hover:-translate-y-1">
 
       <img
         src={friend.picture}

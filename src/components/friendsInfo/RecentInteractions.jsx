@@ -1,8 +1,8 @@
 const RecentInteractions = () => {
   return (
-    <div className="shadow-md rounded-lg p-4">
+    <div className="shadow-md rounded-lg p-4 transition duration-200 hover:shadow-xl hover:-translate-y-1">
 
-      <div className="flex justify-between">
+      <div className="flex justify-between ">
 
         <h3 className="font-semibold">
           Recent Interactions

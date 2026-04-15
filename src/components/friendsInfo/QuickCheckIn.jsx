@@ -16,21 +16,21 @@ const QuickCheckIn = ({ friend }) => {
 
         <button
           onClick={() => addCheckIn("call", friend)}
-          className="shadow p-3 rounded flex flex-col items-center justify-center">
+          className="shadow p-3 rounded flex flex-col items-center justify-center transition duration-300 hover:shadow-xl hover:-translate-y-1   active:scale-95">
           <MdOutlineWifiCalling3  />
           <span>Call</span>
         </button>
 
         <button
           onClick={() => addCheckIn("text", friend)}
-          className="shadow p-3 rounded flex flex-col items-center justify-center">
+          className="shadow p-3 rounded flex flex-col items-center justify-center transition duration-300 hover:shadow-xl hover:-translate-y-1   active:scale-95">
           <MdOutlineTextsms  />
           <span>Text</span>
         </button>
 
         <button
           onClick={() => addCheckIn("video", friend)}
-          className="shadow p-3 rounded flex flex-col items-center justify-center">
+          className="shadow p-3 rounded flex flex-col items-center justify-center transition duration-300 hover:shadow-xl hover:-translate-y-1   active:scale-95">
           <IoVideocamOutline  />
           <span>Video</span>
         </button>

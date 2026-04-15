@@ -39,14 +39,12 @@ const FriendsData = () => {
           <Link
             key={friend.id}
             to={`/friends/${friend.id}`}
-            className="shadow-md flex flex-col items-center text-center p-4 rounded-lg hover:shadow-lg transition"
-          >
+            className="shadow-md flex flex-col items-center text-center p-4 rounded-lg  transition duration-200 hover:shadow-xl hover:-translate-y-1">
             {/* Avatar */}
             <img
               src={friend.picture}
               className="w-16 h-16 rounded-full object-cover pb-2"
-              alt={friend.name}
-            />
+              alt={friend.name} />
 
             {/* Name */}
             <h2 className="font-semibold text-base pb-2">

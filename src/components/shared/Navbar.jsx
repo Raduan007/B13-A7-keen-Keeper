@@ -19,7 +19,7 @@ const Navbar = () => {
                  
                  <NavLink to={"/"}
                  className={({ isActive }) =>
-                `flex items-center gap-2 px-4 py-2 rounded-md
+                `flex items-center gap-2 px-4 py-2 rounded-md transition duration-300 active:scale-95
              ${isActive ? "bg-[#244D3f] text-white" : "bg-white"}` }>
            <IoHomeOutline  />
              <span>Home</span>
@@ -30,7 +30,7 @@ const Navbar = () => {
                  
                  <NavLink to={"/timeline"}
                  className={({ isActive }) =>
-                `flex items-center gap-2 px-4 py-2 rounded-md
+                `flex items-center gap-2 px-4 py-2 rounded-md  transition duration-300 active:scale-95
            ${isActive ? "bg-[#244D3f] text-white" : "bg-white"}` }>
            <IoMdTime  />
              <span>Timeline</span>
@@ -41,7 +41,7 @@ const Navbar = () => {
                  
                  <NavLink to={"/stats"}
                  className={({ isActive }) =>
-                `flex items-center gap-2 px-4 py-2 rounded-md
+                `flex items-center gap-2 px-4 py-2 rounded-md transition duration-300 active:scale-95
                ${isActive ? "bg-[#244D3f] text-white" : "bg-white"}` }>
            <TfiStatsDown  />
              <span>Stats</span>
