@@ -1,11 +1,18 @@
-import React from 'react';
+import TimelineStats from "../../ui/TimelineStats";
+
 
 const StatsPage = () => {
-    return (
-        <div>
-            <h2>stats</h2>
-        </div>
-    );
+  return (
+    <div className="max-w-xl mx-auto p-4">
+
+      <h2 className="text-2xl font-semibold mb-4">
+       Friendship Analytics 
+      </h2>
+
+      <TimelineStats />
+
+    </div>
+  );
 };
 
 export default StatsPage;

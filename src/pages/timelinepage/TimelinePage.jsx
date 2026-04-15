@@ -57,7 +57,7 @@ const TimelinePage = () => {
 
         {filteredTimeline.length === 0 && (
          <div className="text-gray-500 text-center text-lg font-medium py-10 bg-gray-50 border border-gray-200 rounded-xl shadow-sm">
-         No activities yet
+         No data found!
        </div>
         )}
 
