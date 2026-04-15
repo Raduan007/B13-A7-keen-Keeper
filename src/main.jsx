@@ -9,6 +9,7 @@ import TimelinePage from './pages/timelinepage/TimelinePage';
 import StatsPage from './pages/statspage/StatsPage';
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 import FriendsDetails from './pages/friends/FriendsDetails';
+import { CheckInProvider } from './ui/CheckInContext';
 
 
 const router = createBrowserRouter([
@@ -41,8 +42,10 @@ const router = createBrowserRouter([
 ]);
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-        <RouterProvider router={router} /> 
-  </StrictMode>,
+<StrictMode>
+  <CheckInProvider>
+    <RouterProvider router={router} />
+  </CheckInProvider>
+</StrictMode>
 )
 
