@@ -1,16 +1,20 @@
-import React, { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 
 const CheckInContext = createContext();
 
+export const useCheckIn = () => {
+  return useContext(CheckInContext);
+};
 
 export const CheckInProvider = ({ children }) => {
   const [timeline, setTimeline] = useState([]);
 
-  const addCheckIn = (type) => {
+  const addCheckIn = (type, friend) => {
     const newItem = {
       id: Date.now(),
       type,
-      contactName: "John Doe",
+      contactName: friend?.name,
+      contactId: friend?.id,
       date: new Date().toLocaleDateString(),
     };
 
@@ -22,12 +26,8 @@ export const CheckInProvider = ({ children }) => {
       value={{
         timeline,
         addCheckIn,
-      }}
-    >
+      }}>
       {children}
     </CheckInContext.Provider>
   );
-};
-export const useCheckIn = () => {
-  return useContext(CheckInContext);
 };
