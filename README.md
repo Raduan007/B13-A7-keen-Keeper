@@ -18,7 +18,6 @@ It provides a clean dashboard with a **timeline view** and **visual statistics**
 - 🎨 Tailwind CSS  
 - 📊 Recharts  
 - 🔔 React Toastify  
-- ⚡ JavaScript (ES6+)  
 - ⚡ Vite  
 
 ---
@@ -42,32 +41,3 @@ Visualize your activity using beautiful pie charts showing distribution of calls
 Instantly log interactions with friends using one-click buttons and get real-time toast notifications.
 
 ---
-
-# 🚀 Why Keen Keeper?
-
-- ✔ Simple & clean UI  
-- ✔ Real-time interaction tracking  
-- ✔ Visual insights with charts  
-- ✔ Fast and responsive design  
-- ✔ Built with modern React ecosystem  
-
----
-
-# 📷 Preview
-
-_Add screenshots of your app here_
-
----
-
-# 🧠 Future Improvements
-
-- Authentication system  
-- Backend database integration  
-- Weekly/monthly analytics  
-- Dark mode support  
-
----
-
-# ⭐ Support
-
-If you like this project, feel free to ⭐ star the repository!

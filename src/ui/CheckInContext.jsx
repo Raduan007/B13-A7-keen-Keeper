@@ -25,8 +25,7 @@ export const CheckInProvider = ({ children }) => {
     <CheckInContext.Provider
       value={{
         timeline,
-        addCheckIn,
-      }}>
+        addCheckIn, }}>
       {children}
     </CheckInContext.Provider>
   );
