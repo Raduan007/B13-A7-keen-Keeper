@@ -4,7 +4,7 @@ const RecentInteractions = () => {
 
       <div className="flex justify-between ">
 
-        <h3 className="font-semibold">
+        <h3 className="font-semibold text-[#244D3F]">
           Recent Interactions
         </h3>
 

@@ -41,7 +41,7 @@ const TimelinePage = () => {
         <select
           value={filter}
           onChange={(e) => setFilter(e.target.value)}
-          className=" w-1/2 p-3 shadow rounded-lg text-gray-600 bg-gray-100 transition duration-200 hover:shadow-xl hover:-translate-y-1">
+          className=" w-1/2 p-3 shadow rounded-lg text-gray-600 bg-gray-100 ">
 
           <option value="all">Filter timeline</option>
            <option value="text">Text</option>
@@ -72,7 +72,7 @@ const TimelinePage = () => {
 
             <div>
               <p className="font-medium text-gray-800">
-                {item.type} with {item.contactName || "Friend"}
+              <span className="text-[#244D3F] text-xl font-semibold">  {item.type}</span> with {item.contactName || "Friend"}
               </p>
 
               <p className="text-sm text-gray-500">

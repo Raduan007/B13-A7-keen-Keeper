@@ -4,7 +4,7 @@ const RelationshipGoal = ({ friend }) => {
 
       <div className="flex justify-between items-center">
 
-        <h3 className="font-semibold">
+        <h3 className="font-semibold text-[#244D3F]">
           Relationship Goal
         </h3>
 
